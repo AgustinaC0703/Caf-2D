@@ -1,0 +1,189 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device=width, initial scale=1.0"/>
+<title> Cafe 2D</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Great+Vibes&family=Pacifico&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Untitled-2.css">
+</head>
+<body>
+	
+	<style> 
+	
+	.full-width-image {
+     width: 100%; 
+    height:  700px; 
+    object-fit: cover; 
+    display: block; 
+	margin: 0 auto;
+	margin-top:  0;
+		margin-bottom: 30px;
+}
+		.anuncio {
+			 
+			 width: 100%;
+			 padding: 0;
+			 margin: 0;
+			 margin-bottom: 10px;
+			 margin top: 10px
+				 
+		 }
+		 .iframe-anuncio{
+			 
+			 width: 100%;
+			 height: 100px;
+			 border: none
+		 }
+		@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon-text .text {
+        font-size: 30px;
+    }
+
+    .fa-bars {
+        font-size: 30px;
+    }
+
+    .ubicacionyhorarios1, .ubicacionyhorarios2 {
+        width: 95%;
+    }
+
+    .full-width-image {
+        height: auto;
+    }
+
+    .sidebar {
+        height: 30vh;
+    }
+
+    .sidebar ul li a {
+        font-size: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-item i {
+        font-size: 18px;
+    }
+
+    .footer-item p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fa-bars {
+        font-size: 24px;
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .text {
+        font-size: 24px;
+    }
+
+    .ubicacionyhorarios1, .ubicacionyhorarios2 {
+        padding: 15px;
+    }
+
+    .footer {
+        padding: 30px 0;
+    }
+
+    .footer-item i {
+        font-size: 16px;
+    }
+
+    .footer-item p {
+        font-size: 10px;
+    }
+}
+	</style>
+	<header>
+		
+			<div class="header-container"> 
+		<div class= "icon-text" id= "iconText">
+			<a href="index.html">
+	<img src= "WhatsApp_Image_2024-10-02_at_19.38.04-removebg-preview.png" alt= "icon" class= "icon"> <span class="text">Café 2D</span></a>
+		</div>
+				 <nav id="sidebar" class="sidebar">
+  <ul>
+    <li><a href="Menú.html">menú</a></li>
+	<li><a href="Ubicación y horarios.html">ubicación y horarios</a></li>
+    <li><a href="Acerca de Nostros.html">Acerca de nosotros</a></li>
+         
+  </ul>
+</nav>
+			<i class="fa fa-bars" aria-hidden="true" id="menu-icon"></i>
+			 </div>
+		
+	</header>
+		 <div class="container">
+		<img src="coffee-819362_1920.jpg" alt="Imagen" class="full-width-image">
+	     </div>
+		<div class= "ubicacionyhorarios1">
+		 <h2 class= "horarios" > Ubicación: Pasaje Viavia, Arribeños y Juramento </h2>
+		</div>
+			<div class="ubicacionyhorarios2">
+			<h2 class= "horarios" > Horarios: Todos los días de 9:00 AM a 21:00 PM</h2>
+			</div>
+	   <div class="anuncio">
+        <iframe src="https://vitapasquale.github.io/anuncio.html" frameborder="0" class="iframe-anuncio"></iframe>
+    </div>
+	 	<footer>
+			
+			
+
+
+    <div class="footer">
+        <div class="footer-item">
+           <i class="fas fa-phone" aria-hidden="true" ></i>
+            <p>+5493875457553</p>
+        </div>
+        <div class="footer-item">
+          <i class="fas fa-envelope" aria-hidden="true"  ></i>
+            <p>Café-2D@gmail.com</p>
+        </div>
+		<div class="footer-item">
+           <i class="fab fa-instagram" aria-hidden="true" ></i>
+            <p>@cafe2d.belgrano</p>
+        </div>
+		</div>
+	
+		</footer>
+			
+	<script>
+	document.getElementById('menu-icon').onclick = function() {
+		var sidebar=document.getElementById ('sidebar'); 
+		sidebar.classList.toggle('show');
+	};
+		
+		document.getElementById('iconText').onclick = function(){
+			window.location.href = "Café 2D.html"
+		};
+	
+	</script>
+</body>
+</html>

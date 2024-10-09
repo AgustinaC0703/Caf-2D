@@ -1,0 +1,176 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device=width, initial scale=1.0"/>
+<title> Cafe 2D</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Great+Vibes&family=Pacifico&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Untitled-2.css">
+
+</head>
+<body>
+	<header>
+		<div class="header-container"> 
+		<div class= "icon-text" id= "iconText">
+	<img src= "WhatsApp_Image_2024-10-02_at_19.38.04-removebg-preview.png" alt= "icon" class= "icon">
+			
+			<span class="text">Café 2D</span>
+		</div>
+				 <nav id="sidebar" class="sidebar">
+  <ul>
+    <li><a href="Menú.html" >menú</a></li>
+	<li><a href="Ubicación y horarios.html">ubicación y horarios</a></li>
+    <li><a href="Acerca de Nostros.html">Acerca de nosotros</a></li>
+         
+  </ul>
+</nav>
+			<i class="fa fa-bars" aria-hidden="true" id="menu-icon"></i>
+			 </div>
+		
+	</header>
+	<section>
+	
+	 <div class="container">
+<img src= "71770545-3401-4d8d-96af-5a8878741eb1.jpeg"  alt="Imagen" class="full-width-image">
+
+		
+		</div>
+	</section>
+	
+
+    <div class="icons-container">
+        <div class="item">
+            <img src="WhatsApp_Image_2024-10-08_at_10.11.45-removebg-preview.png" alt="icons">
+            <p> Menú amplio y variado</p>
+        </div>
+        <div class="item">
+            <img src="WhatsApp_Image_2024-10-08_at_10.11.45__1_-removebg-preview.png" alt="icons">
+            <p>Diseño visual atrapante y original</p>
+        </div>
+        <div class="item">
+            <img src="WhatsApp_Image_2024-10-08_at_10.11.45__2_-removebg-preview.png" alt="icons">
+            <p> Excelente ubicación </p>
+        </div>
+	</div>
+	
+
+	
+    <div class="container-products">
+        <div class="productos-destacados">
+            <h2>Productos destacados de la semana</h2>
+        </div>
+		
+		<div class="slider">
+       <div class="slides">
+           <div class="slide">
+		   
+		   <img src= "ca91bf5d-87af-47da-855e-ebd12db0d106.jpeg" alt="slideimage">
+		   
+		   </div>
+           <div class="slide">
+		   <img src="WhatsApp Image 2024-09-10 at 20.14.39.jpeg" alt= "slideimage">
+		   
+		   </div>
+		    <div class="slide">
+		   <img src="WhatsApp Image 2024-09-10 at 20.17.28.jpeg" alt= "slideimage">
+		   
+		   </div>
+       </div>
+       <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+       <button class="next" onclick="moveSlide(1)">&#10095;</button>
+</div>
+</div>
+	
+	
+	
+
+<div class= "productos">
+		<h2> Un recorrido por nuestro café </h2>
+		</div>
+
+    <div class="nuestrocafe">
+        <img src="05a1ff76-88b8-4e75-b5be-0918e0c1c7ba.jpeg" alt="Imagen 1">
+        <img src="2171a7d3-4ce5-488a-bafa-476a6fabe824.jpeg" alt="Imagen 2">
+        <img src="3c69ebb5-0052-4db6-936f-d90393adbf92.jpeg" alt="Imagen 3">
+    </div>
+
+	<footer>
+			
+
+
+    <div class="footer">
+        <div class="footer-item">
+           <i class="fas fa-phone" aria-hidden="true" ></i>
+            <p>+5493875457553</p>
+        </div>
+        <div class="footer-item">
+          <i class="fas fa-envelope" aria-hidden="true"  ></i>
+            <p>Café-2D@gmail.com</p>
+        </div>
+		<div class="footer-item">
+           <i class="fab fa-instagram" aria-hidden="true" ></i>
+            <p>@cafe2d.belgrano</p>
+        </div>
+		</div>
+	
+
+		</footer>
+	
+	<script>
+	document.getElementById( 'menu-icon').onclick = function() {
+		var sidebar=document.getElementById ('sidebar'); 
+		sidebar.classList.toggle('show');
+	};
+		
+		document.getElementById('iconText').onclick = function(){
+			window.location.href = "Café 2D.html"
+		}
+	
+	</script>
+	
+	<script>
+		
+    let slideIndex = 0;
+  
+function showSlide(index) {
+    const slides = document.querySelector('.slides');
+    const totalSlides = document.querySelectorAll('.slide').length;
+    
+    if (index >= totalSlides) {
+        slideIndex = 0;
+    } else if (index < 0) {
+        slideIndex = totalSlides - 1;
+    } else {
+        slideIndex = index;
+    }    
+    slides.style.transform = `translateX(${-slideIndex * 100}%)`;
+}
+function nextSlide() {
+  showSlide(currentSlide + 1);
+}
+ 
+function prevSlide() {
+  showSlide(currentSlide - 1);
+}  
+function moveSlide(step) {
+    showSlide(slideIndex + step);
+}
+  
+// Initialize slider
+showSlide(slideIndex);
+ 
+</script>
+	
+</body>
+</html>
